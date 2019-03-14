@@ -5,10 +5,8 @@ in contributing.
 ## Open API Spec
 
 We document APIs using [Open API 3.0](https://swagger.io/docs/specification/about/)
- (formerly known as Swagger). These documents live in
-[Nexmo Developer](https://github.com/Nexmo/nexmo-developer/tree/master/_open_api)
-during development, then the
-[API Specification](https://github.com/nexmo/api-specification) repo once complete
+ (formerly known as Swagger). These documents live in the
+[API Specification](https://github.com/nexmo/api-specification) repo.
 
 ## General API Guidelines
 
