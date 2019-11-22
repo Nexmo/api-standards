@@ -3,11 +3,16 @@ language: go
 go:
   - master
 
+# Get a release URL from https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linux-64bit.tar.gz
 install:
-  - go get github.com/spf13/hugo
+  - mkdir downloads
+  - cd downloads
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linux-64bit.tar.gz -O hugo.tar.gz # write to a known filename so we don't have update the next line when updating binary versions
+  - tar -zxf hugo.tar.gz
+  - cd ..
 
 script:
-  - hugo
+  - ./downloads/hugo
 
 deploy:
   local_dir: public
