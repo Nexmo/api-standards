@@ -12,8 +12,8 @@ When sending error information as a webhook, these are our standard fields.
 
 * `reason` (**required**): Description of the error
 * `timestamp` (**required**): Timestamp in ISO 8601 format
-* `level` (**recommended**): One of "error", "warn" or "info" - if this field is omitted, "error" should be assumed (the Voice API originally only had one error level).
-* `type`: A URL to more information about the error (as used in Response Errors)
+* `level` (**required**): One of "error", "warn" or "info" - if this field is omitted, "error" should be assumed (the Voice API originally only had one error level).
+* `type` (**required**): A URL to more information about the error (as used in Response Errors)
 * `detail`: Any more information about the error (as used in Response Errors)
 
 In addition, any other identifiers or other information that are useful in the error context. For example, Voice API also returns `conversation_uuid`.

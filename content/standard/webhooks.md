@@ -6,9 +6,27 @@ category: callbacks
 example_apis: []
 ---
 
-### GET webhooks
+### Delivering Data with a Webhook
 
-Objects *retrieved* via webhooks by the API are in `camelCase`.
+`POST` is our preferred method when delivering data via webhook.
+
+Objects and data *sent* via webhooks by the API are in `snake_case`.
+
+#### Examples
+
+[Voice API webhooks](https://developer.nexmo.com/voice/voice-api/webhook-reference)
+
+* `conversation_uuid`
+* `start_time`
+
+[Messages API callbacks](https://developer.nexmo.com/api/messages-olympus#inbound-message)
+
+* `message_uuid`
+* `timestamp`
+
+### Webhooks to Fetch Data
+
+There may be some use cases when the webhook fetches data and causes no effect on the receiving side. In this case, `GET` method may be used and `camelCase` variables may be preferred for consistency with other parts of the application.
 
 #### Examples
 
@@ -17,17 +35,6 @@ Nexmo Call Control Objects ([NCCO](https://developer.nexmo.com/voice/voice-api/n
 * `eventUrl`
 * `musicOnHold`
 * `beepOnStart`
-
-### POST webhooks
-
-Objects *sent* via webhooks by the API are in `snake_case`.
-
-#### Examples
-
-[Voice API callbacks](https://developer.nexmo.com/voice/voice-api/webhook-reference)
-
-* `conversation_uuid`
-* `start_time`
 
 ### Why did we choose this?
 
