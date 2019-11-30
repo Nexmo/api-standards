@@ -16,6 +16,8 @@ This is a short description of the standard
 * There will always be a `_links.self` to the current resource.
 * Paging will use `_links`.
 
+> *Important:* The base URL in the `_links` section must reflect the host used for the incoming request. If the user calls `https://api-eu-1.nexmo.com` then the base URL for any `href` fields in `_links` must be the same (unless there are technical limitations why we must use `https://api.nexmo.com`)
+
 ### Examples
 
 ```json
