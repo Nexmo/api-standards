@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" itemscope="" itemtype="http://schema.org/Article"><head>
+	<meta name="generator" content="Hugo 0.59.1" />
+    <meta charset="UTF-8">
+    <title>Nexmo API Standards</title>
+
+    
+    <link rel="stylesheet" href="/api-standards/css/volta.min.css"> 
+
+    
+    
+    <link rel="stylesheet" href="/api-standards/css/addons/volta-prism.css">
+    <link rel="stylesheet" href="/api-standards/css/volta-templates.min.css">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+</head>
+<body class="Vlt-template Vlt-template--sidenav">    <body class="Vlt-template Vlt-template--sidenav"> 
+
+      <header class="Vlt-sidenav__mobile Vlt-sidenav__mobile--dark">
+          <a href="/"><img class="Vlt-sidenav__mobile__logo" src="/api-standards/images/logos/nexmo-logo--collapsed.svg"></a>
+        <button id="Vlt-sidenav-mobile-trigger">
+          <svg class="Vlt-sidenav__collapse__close">
+            <use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use>
+          </svg>
+        </button>
+      </header>
+
+      <aside id="Vlt-sidenav" class="Vlt-sidenav Vlt-sidenav--dark">
+        
+        
+        <script>
+          loadMenu();   
+function loadMenu() {
+  if(localStorage.getItem('menuCollapse')) {
+    $('#Vlt-sidenav .Vlt-sidemenu__trigger_active').removeClass('Vlt-sidemenu__trigger_active');
+    $('#Vlt-sidenav').addClass('Vlt-sidenav--collapsed');
+  }
+}
+        </script>
+        
+
+        <div class="Vlt-sidenav__block Vlt-sidenav__block--logo Vlt-M-plus">
+          <a class="Vlt-sidenav__logo" href="/">
+              <img class="Vlt-sidenav__elem--full" src="/api-standards/images/logos/nexmo-logo.svg">
+              <img class="Vlt-sidenav__elem--collapsed" src="/api-standards/images/logos/nexmo-logo--collapsed.svg">
+          </a>
+          <div id="Vlt-sidenav-collapse-trigger" class="Vlt-sidenav__collapse">
+            <svg class="Vlt-sidenav__collapse__close"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-chevron-left"></use></svg>
+            <svg class="Vlt-sidenav__collapse__open"><use xlink:href="/symbol/volta-icons.svg#Vlt-icon-menu"></use></svg>
+          </div>
+        </div>
+
+        <div class="Vlt-sidenav__scroll">
+          <ul class="Vlt-sidemenu Vlt-sidemenu--rounded">
+            <li role="separator"><h5 class="Vlt-sidemenu__title">HTTP Codes</h5></li>
+            
+            
+            <li>
+              <p class="Vlt-sidemenu__trigger">
+              <span class="Vlt-sidemenu__label">2xx</span>
+              </p>
+              <ul>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/200/"><span class="Vlt-sidemenu__label">200</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/201/"><span class="Vlt-sidemenu__label">201</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/202/"><span class="Vlt-sidemenu__label">202</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/204/"><span class="Vlt-sidemenu__label">204</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/207/"><span class="Vlt-sidemenu__label">207</span></a></li>
+            
+            
+                
+                
+                    </ul>
+                    </li>
+                    <li>
+                      <p class="Vlt-sidemenu__trigger">
+                      <span class="Vlt-sidemenu__label">4xx</span>
+                      </p>
+                      <ul>
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/400/"><span class="Vlt-sidemenu__label">400</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/401/"><span class="Vlt-sidemenu__label">401</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/403/"><span class="Vlt-sidemenu__label">403</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/404/"><span class="Vlt-sidemenu__label">404</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/405/"><span class="Vlt-sidemenu__label">405</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/406/"><span class="Vlt-sidemenu__label">406</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/409/"><span class="Vlt-sidemenu__label">409</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/410/"><span class="Vlt-sidemenu__label">410</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/415/"><span class="Vlt-sidemenu__label">415</span></a></li>
+            
+            
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/429/"><span class="Vlt-sidemenu__label">429</span></a></li>
+            
+            
+                
+                
+                    </ul>
+                    </li>
+                    <li>
+                      <p class="Vlt-sidemenu__trigger">
+                      <span class="Vlt-sidemenu__label">5xx</span>
+                      </p>
+                      <ul>
+                
+                <li><a class="Vlt-sidemenu__link" href="/api-standards/http-code/500/"><span class="Vlt-sidemenu__label">500</span></a></li>
+            
+              </ul>
+            </li>
+
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Callbacks</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/webhooks/"><span class="Vlt-sidemenu__label">Webhooks</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/webhook-error-notifications/"><span class="Vlt-sidemenu__label">Webhook Error Notifications</span></a></li>
+                  
+              </ul>
+            </li>
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Properties</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/dates-and-times/"><span class="Vlt-sidemenu__label">Dates and Times</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/data-structure/"><span class="Vlt-sidemenu__label">Data Structure</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/decimal-precision/"><span class="Vlt-sidemenu__label">Decimal Precision</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/property-names/"><span class="Vlt-sidemenu__label">Property Names</span></a></li>
+                  
+              </ul>
+            </li>
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Request</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/http-verbs/"><span class="Vlt-sidemenu__label">HTTP Verbs</span></a></li>
+                  
+              </ul>
+            </li>
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Response</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/pagination/"><span class="Vlt-sidemenu__label">Pagination</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/hal-json/"><span class="Vlt-sidemenu__label">HAL-JSON</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/errors/"><span class="Vlt-sidemenu__label">Errors</span></a></li>
+                  
+              </ul>
+            </li>
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Uri</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/resource-names/"><span class="Vlt-sidemenu__label">Resource Names</span></a></li>
+                  
+              </ul>
+            </li>
+            
+            <li role="separator"><h5 class="Vlt-sidemenu__title">Versioning</h5></li>
+              <ul>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/versioning/"><span class="Vlt-sidemenu__label">API Versioning</span></a></li>
+                  
+                  <li><a class="Vlt-sidemenu__link" href="/api-standards/standard/deprecation/"><span class="Vlt-sidemenu__label">Deprecation</span></a></li>
+                  
+              </ul>
+            </li>
+            
+          </ul>
+
+          <ul class="Vlt-sidemenu Vlt-sidemenu--rounded">
+              <li role="separator"><h5 class="Vlt-sidemenu__title">Suggest an improvement</h5></li>
+                  <li><a class="Vlt-sidemenu__link" href="https://github.com/Nexmo/api-standards"><span class="Vlt-sidemenu__label">https://github.com/Nexmo/api-standards</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="Vlt-main Vlt-main--dark">
+
+          <div class="Vlt-card Vlt-article">
+<div id="content">
+    <h1>Nexmo API standards</h1>
+
+    
+
+<p>This is a living document containing the Nexmo API standards. We&rsquo;ll be discussing
+new standards in <code>#api-standards</code> on Slack, so please join us if you&rsquo;re interested
+in contributing.</p>
+
+<h2 id="open-api-spec">Open API Spec</h2>
+
+<p>We document APIs using <a href="https://swagger.io/docs/specification/about/">Open API 3.0</a>
+ (formerly known as Swagger). These documents live in the
+<a href="https://github.com/nexmo/api-specification">API Specification</a> repo.</p>
+
+<h2 id="general-api-guidelines">General API Guidelines</h2>
+
+<blockquote>
+<p>These are general API guidelines that I haven&rsquo;t found a home for yet</p>
+</blockquote>
+
+<ul>
+<li>Updating resources will fail if required parameters are not set.</li>
+<li>Unsent optional parameters will not be overwritten with default values.</li>
+<li>Response for a POST or GET will be the same resource.</li>
+<li>All APIs that allow updating a resource will also allow fetching a resource.</li>
+<li>In each context properties that are always unknown may be omitted. For example: a request to sending an SMS never contains DLR data.</li>
+<li>Properties that are potentially unknown should be included, but without a value. For example, if the Cloud Communications Platform cannot call the phone number defined in a request from Call API, the return properties will not have a valid <code>call_start</code> and <code>call_end</code>.</li>
+</ul>
+
+<h2 id="contributing-to-these-standards">Contributing to These Standards</h2>
+
+<p>These standards are on GitHub at <a href="https://github.com/Nexmo/api-standards">https://github.com/Nexmo/api-standards</a>. Vonage employees may submit pull requests to propose changes or improve these standards at any time.</p>
+
+
+    <h3>HTTP Codes</h3>
+    <ul>
+    
+    <li><a href="/api-standards/http-code/">Http-codes</a></li>
+    
+    </ul>
+
+        </div></div>
+</main>
+
+<script src="/api-standards/js/svgxuse.min.js"></script>
+<script src="/api-standards/js/volta.min.js"></script>
+
+<script>
+    Volta.init(['menu', 'menuCollapse']);
+</script>
+
+<script src="/api-standards/js/addons/prism.js"></script>
+
+<style>
+ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+th {
+    background: lightgrey;
+}
+
+th, td {
+border: 1px solid black;
+    padding: 3px;
+}
+
+ul {
+margin-bottom: 10px;
+}
+
+blockquote {
+    border-left: 3px solid #0f6ba1;
+    padding-left: 5px;
+}
+
+</style>
+
+</body></html>
+
+</body>
+</html>

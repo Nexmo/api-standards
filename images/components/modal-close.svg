@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Modals---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-512.000000, -62.000000)">
+        <g id="Modal" transform="translate(156.000000, 40.000000)" fill="#637381" fill-rule="nonzero">
+            <g id="icn-close" transform="translate(356.000000, 22.000000)">
+                <g id="Group-12" transform="translate(2.083333, 2.500000)">
+                    <polygon id="Path-252" points="1.42258898 15.115968 15.115968 1.42258898 13.9374567 0.244077682 0.244077682 13.9374567"></polygon>
+                    <polygon id="Path-252-Copy" points="0.244077682 1.42258898 13.9374567 15.115968 15.115968 13.9374567 1.42258898 0.244077682"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Http-codes on My New Hugo Site</title>
+    <link>https://nexmo.github.io/api-standards/http-code/</link>
+    <description>Recent content in Http-codes on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2018 02:43:59 +0100</lastBuildDate>
+    
+	<atom:link href="https://nexmo.github.io/api-standards/http-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>415</title>
+      <link>https://nexmo.github.io/api-standards/http-code/415/</link>
+      <pubDate>Tue, 31 Jul 2018 02:43:59 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/415/</guid>
+      <description> 415 The 415 HTTP code is used when an unsupported Content-Type header is supplied
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#content-type-header&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Invalid Content-Type header&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;Invalid Content-Type header provided. Must be one of the following: &#39;application/json&#39;&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>406</title>
+      <link>https://nexmo.github.io/api-standards/http-code/406/</link>
+      <pubDate>Tue, 31 Jul 2018 02:43:56 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/406/</guid>
+      <description> 406 The 406 HTTP code is used when an unsupported Accept header is supplied
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#accept-header&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Invalid Accept header&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;Invalid Accept header provided. Must be one of the following: &#39;application/json&#39;&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>405</title>
+      <link>https://nexmo.github.io/api-standards/http-code/405/</link>
+      <pubDate>Tue, 31 Jul 2018 02:43:54 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/405/</guid>
+      <description> 405 The 405 HTTP code is used when an unsupported HTTP verb is used on a resource.
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#wrong-verb&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Request method not allowed&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;Request method &#39;OPTIONS&#39; not supported&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>403</title>
+      <link>https://nexmo.github.io/api-standards/http-code/403/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/403/</guid>
+      <description> 403 The authenticated user can not make this request. This is not an authentication issue, this is an authorization issue (could be due to low balance, scope of the auth token used, etc).
+ Important: We use 404 rather than 403 for invalid permissions as we don&amp;rsquo;t want to leak that the resource exists to another user
+ Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors/account/secret-management#maximum-secrets-allowed&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Maxmimum number of secrets already met&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;This account has reached maximum number of &#39;2&#39; allowed secrets&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>404</title>
+      <link>https://nexmo.github.io/api-standards/http-code/404/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/404/</guid>
+      <description> 404 The resource could not be found, or the authenticating user does not have access to the resource.
+We use 404 rather than 403 for invalid permissions as we don&amp;rsquo;t want to leak that the resource exists to another user
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#invalid-api-key&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Invalid API Key&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;API key &#39;ABC123&#39; does not exist, or you do not have access&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>409</title>
+      <link>https://nexmo.github.io/api-standards/http-code/409/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/409/</guid>
+      <description> 409 The request could not be completed due to a conflict with the current state of the resource. The resource exists; however, the action could not be taken. The response MUST contain contain a description of the conflict.
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#conflict&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Conflict&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;This resource cannot be updated once the job has started running&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>410</title>
+      <link>https://nexmo.github.io/api-standards/http-code/410/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/410/</guid>
+      <description> 410 The requested resource is no longer available at the server. This condition is expected to be considered permanent. Used when the URI is formatted correctly, but the subresource is no long available.
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#gone&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Gone&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;The resource at this location no longer exists&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>429</title>
+      <link>https://nexmo.github.io/api-standards/http-code/429/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/429/</guid>
+      <description> 429 The 429 HTTP code is used when a consumer has exceeded their rate limit
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#rate-limited&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Rate Limited&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;You have exceeded your rate limit. You can try again at YYYY-MM-DD HH:mm:ss&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>500</title>
+      <link>https://nexmo.github.io/api-standards/http-code/500/</link>
+      <pubDate>Tue, 31 Jul 2018 02:27:01 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/500/</guid>
+      <description> 500 The 500 HTTP code is a generic code, like a 200 used in most cases when no more specific code applies
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#internal-error&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Internal Error&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;An internal error occured. Please try again shortly&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>204</title>
+      <link>https://nexmo.github.io/api-standards/http-code/204/</link>
+      <pubDate>Tue, 31 Jul 2018 02:26:33 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/204/</guid>
+      <description>204 Generally used on a successful DELETE. As the resource has been deleted there is no body.
+Example response Empty response body</description>
+    </item>
+    
+    <item>
+      <title>400</title>
+      <link>https://nexmo.github.io/api-standards/http-code/400/</link>
+      <pubDate>Tue, 31 Jul 2018 02:26:33 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/400/</guid>
+      <description> 400 Generic, like a 200 used in most cases when the request is incorrect and no more specific code applies. More details should be available (specific error, and human description) in the response body.
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors/account/secret-management#validation&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Bad Request&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;The request failed due to validation errors&amp;quot;, &amp;quot;invalid_parameters&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;secret&amp;quot;, &amp;quot;reason&amp;quot;: &amp;quot;must contain 1 upper case character&amp;quot; } ], &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>401</title>
+      <link>https://nexmo.github.io/api-standards/http-code/401/</link>
+      <pubDate>Tue, 31 Jul 2018 02:26:33 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/401/</guid>
+      <description> 401 Request is missing API authorization credentials, or those credentials are invalid.
+Example response { &amp;quot;type&amp;quot;: &amp;quot;https://developer.nexmo.com/api-errors#unauthorized&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Invalid credentials supplied&amp;quot;, &amp;quot;detail&amp;quot;: &amp;quot;You did not provide correct credentials.&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;797a8f199c45014ab7b08bfe9cc1c12c&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>202</title>
+      <link>https://nexmo.github.io/api-standards/http-code/202/</link>
+      <pubDate>Tue, 31 Jul 2018 02:25:26 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/202/</guid>
+      <description>202 Acknowledges the request has been received, but not that the process has been completed. Used for asynchronous tasks, such as if the action will be placed in a queue, or depends on an external service with a slow response time.
+The response body should include status information and an identifier for the resource, such as a self link (some of our APIs return an ID here which is also acceptable).</description>
+    </item>
+    
+    <item>
+      <title>207</title>
+      <link>https://nexmo.github.io/api-standards/http-code/207/</link>
+      <pubDate>Tue, 31 Jul 2018 00:45:42 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/207/</guid>
+      <description> 207 A Multi-Status response conveys information about multiple resources in situations where multiple status codes might be appropriate.
+This should not be used unless in exceptional circumstances
+Example response  @TODO: Define this format
+ { &amp;quot;multistatus&amp;quot;: { &amp;quot;200&amp;quot;: [{&amp;quot;example&amp;quot;:&amp;quot;value&amp;quot;}], &amp;quot;400&amp;quot;: [ { &amp;quot;payload&amp;quot;: {&amp;quot;example&amp;quot;:&amp;quot;value&amp;quot;}, &amp;quot;error&amp;quot;: { &amp;quot;type&amp;quot;: &amp;quot;https://example.net/validation-error&amp;quot;, &amp;quot;title&amp;quot;: &amp;quot;Your request parameters didn&#39;t validate.&amp;quot;, &amp;quot;instance&amp;quot;: &amp;quot;&amp;lt;trace_id&amp;gt;&amp;quot;, &amp;quot;invalid_parameters&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;age&amp;quot;, &amp;quot;reason&amp;quot;: &amp;quot;must be a positive integer&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;color&amp;quot;, &amp;quot;reason&amp;quot;: &amp;quot;must be &#39;green&#39;, &#39;red&#39; or &#39;blue&#39;&amp;quot; } ] } } ] } }  </description>
+    </item>
+    
+    <item>
+      <title>201</title>
+      <link>https://nexmo.github.io/api-standards/http-code/201/</link>
+      <pubDate>Tue, 31 Jul 2018 00:45:40 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/201/</guid>
+      <description> 201 Used when a new resource has been created.
+The body of the response should be the same as the GET representation of the new resource, including any generated/calculated fields.
+Example response { &amp;quot;_links&amp;quot;: { &amp;quot;self&amp;quot;: { &amp;quot;href&amp;quot;: &amp;quot;https://api.nexmo.com/accounts/7c9738e6/secrets/ad6dc56f-07b5-46e1-a527-85530e625800&amp;quot; } }, &amp;quot;id&amp;quot;: &amp;quot;ad6dc56f-07b5-46e1-a527-85530e625800&amp;quot;, &amp;quot;created_at&amp;quot;: &amp;quot;2017-03-02T16:34:49Z&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>200</title>
+      <link>https://nexmo.github.io/api-standards/http-code/200/</link>
+      <pubDate>Tue, 31 Jul 2018 00:25:39 +0100</pubDate>
+      
+      <guid>https://nexmo.github.io/api-standards/http-code/200/</guid>
+      <description>200 The 200 HTTP code is used when the user&amp;rsquo;s request has been successful. This is our most commonly HTTP code and should be used for all successful requests, unless the request is a POST (see 201) or there are multiple status codes being returned (though this is discouraged, see 207)
+Example response { &amp;quot;_links&amp;quot;: { &amp;quot;self&amp;quot;: { &amp;quot;href&amp;quot;: &amp;quot;https://api.nexmo.com/accounts/7c9738e6/secrets&amp;quot; } }, &amp;quot;_embedded&amp;quot;: { &amp;quot;secrets&amp;quot;: [ { &amp;quot;_links&amp;quot;: { &amp;quot;self&amp;quot;: { &amp;quot;href&amp;quot;: &amp;quot;https://api.</description>
+    </item>
+    
+  </channel>
+</rss>
