@@ -62,11 +62,13 @@ To add a new page-based public API, you must get agreement from DevRel.
 ```json
 {
   "page_size": 100,
-  "cursor": "19284743",
   "_embedded": {
-    "resource_name": {
-      "data":"here"
-    }
+    "users": [
+      {
+        "id": "abc123",
+        "name": "Ashley"
+      }
+    ]}
   },
   "_links": {
     "self": {
@@ -91,9 +93,12 @@ To add a new page-based public API, you must get agreement from DevRel.
   "total_pages": 8,
   "total_items": 814,
   "_embedded": {
-    "resource_name": {
-      "data":"here"
-    }
+    "users": [
+      {
+        "id": "abc123",
+        "name": "Ashley"
+      }
+    ]
   },
   "_links": {
     "self": {
