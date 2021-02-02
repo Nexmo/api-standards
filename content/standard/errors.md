@@ -15,6 +15,7 @@ Any non 200 response body should follow a standard format. This should be consis
 In the following examples:
 
 * `type` is both the identifier for the specific error (URI) and a link to human readable documentation about the problem.
+* `code` is the fragment of the `type` for easy usage and propagation in code.
 * `title` is a short indication of what went wrong 
 * `detail` provides more information about the error
 * `instance` is the Nexmo trace ID (previously returned as a header)
@@ -28,6 +29,7 @@ Content-Language: en
 
 {
     "type": "https://example.com/Error#out-of-credit",
+    "type-code": "out-of-credit",
     "title": "You do not have enough credit",
     "instance": "<trace_id>"
 }
@@ -43,6 +45,7 @@ Content-Language: en
 {
   "type": "https://example.com/Error#out-of-credit",
   "title": "You do not have enough credit",
+  "type-code": "out-of-credit",
   "detail": "Your current balance is 30, but that costs 50.",
   "instance": "<trace_id>"
 }
@@ -57,6 +60,7 @@ Content-Language: en
 
 {
   "type": "https://example.net/validation-error",
+  "type-code": "validation-error",
   "title": "Your request parameters didn't validate.",
   "instance": "<trace_id>",
   "invalid_parameters": [
