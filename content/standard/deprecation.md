@@ -12,6 +12,7 @@ When the decision has been taken to deprecate an API:
 * For GA products the deprecation period must be at least 1 year
 * Warning emails will be sent to the API at regular intervals before the deprecation time
 * A guide will be supplied to customers explaining how to migrate to the replacement API with the initial deprecation notice.
+* Fields and routes that are being deprecated should be marked as such in the OpenAPI spec, but not removed until the deprecation period has elapsed. This is done by setting `deprecated: true` on the deprecated object.
 
 
 ### Why did we choose this?
